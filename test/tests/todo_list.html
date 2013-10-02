@@ -1,31 +1,31 @@
 <p>Simple todo-list:</p>
 <ul class="todo-list">
-  <li><label class="checkbox checked"><input type="checkbox" checked>test</label></li>
-  <li><label class="checkbox"><input type="checkbox">test</label></li>
-  <li><label class="checkbox"><input type="checkbox">test</label></li>
+  <li todo-counter="1"><label class="checkbox checked"><input type="checkbox" checked>test 1</label></li>
+  <li todo-counter="2"><label class="checkbox"><input type="checkbox">test 2</label></li>
+  <li todo-counter="3"><label class="checkbox"><input type="checkbox">test 3</label></li>
 </ul>
 
 <p>Nested todo-list:</p>
 <ul class="todo-list">
-  <li><label class="checkbox"><input type="checkbox">hey</label></li>
-  <li>
+  <li todo-counter="4"><label class="checkbox"><input type="checkbox">hey</label></li>
+  <li todo-counter="5">
     <label class="checkbox"><input type="checkbox">there
       <ul class="todo-list">
-        <li><label class="checkbox"><input type="checkbox">sub-<strong>list</strong></label></li>
-        <li><label class="checkbox checked"><input type="checkbox" checked>sub-list 2</label></li>
+        <li todo-counter="6"><label class="checkbox"><input type="checkbox">sub-<strong>list</strong></label></li>
+        <li todo-counter="7"><label class="checkbox checked"><input type="checkbox" checked>sub-list 2</label></li>
       </ul>
     </label>
   </li>
-  <li>
+  <li todo-counter="8">
     <label class="checkbox"><input type="checkbox">foo
       <ul class="todo-list">
-        <li>
+        <li todo-counter="9">
           <label class="checkbox"><input type="checkbox">bar
             <ul class="todo-list">
-              <li>
+              <li todo-counter="10">
                 <label class="checkbox checked"><input type="checkbox" checked>baz
                   <ul class="todo-list">
-                    <li><label class="checkbox checked"><input type="checkbox" checked>lol</label></li>
+                    <li todo-counter="11"><label class="checkbox checked"><input type="checkbox" checked>lol</label></li>
                   </ul>
                 </label>
               </li>

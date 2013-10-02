@@ -1,6 +1,37 @@
-<p>Todo list:</p>
-<ul>
+<p>Simple todo-list:</p>
+<ul class="todo-list">
   <li><label class="checkbox checked"><input type="checkbox" checked>test</label></li>
   <li><label class="checkbox"><input type="checkbox">test</label></li>
   <li><label class="checkbox"><input type="checkbox">test</label></li>
+</ul>
+
+<p>Nested todo-list:</p>
+<ul class="todo-list">
+  <li><label class="checkbox"><input type="checkbox">hey</label></li>
+  <li>
+    <label class="checkbox"><input type="checkbox">there
+      <ul class="todo-list">
+        <li><label class="checkbox"><input type="checkbox">sub-<strong>list</strong></label></li>
+        <li><label class="checkbox checked"><input type="checkbox" checked>sub-list 2</label></li>
+      </ul>
+    </label>
+  </li>
+  <li>
+    <label class="checkbox"><input type="checkbox">foo
+      <ul class="todo-list">
+        <li>
+          <label class="checkbox"><input type="checkbox">bar
+            <ul class="todo-list">
+              <li>
+                <label class="checkbox checked"><input type="checkbox" checked>baz
+                  <ul class="todo-list">
+                    <li><label class="checkbox checked"><input type="checkbox" checked>lol</label></li>
+                  </ul>
+                </label>
+              </li>
+            </ul>
+          </label></li>
+      </ul>
+    </label>
+  </li>
 </ul>

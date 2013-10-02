@@ -1,5 +1,16 @@
-Todo list:
+Simple todo-list:
 
 [X] test
 [ ] test
 [ ] test
+
+Nested todo-list:
+
+[ ] hey
+[ ] there
+    [ ] sub-**list**
+    [v] sub-list 2
+[ ] foo
+    [ ] bar
+        [X] baz
+            [V] lol

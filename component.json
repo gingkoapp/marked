@@ -4,7 +4,7 @@
   "repo": "chjj/marked",
   "description": "A markdown parser built for speed",
   "keywords": ["markdown", "markup", "html"],
-  "scripts": ["lib/marked.js"],
-  "main": "lib/marked.js",
+  "scripts": ["index.js", "lib/marked.js"],
+  "main": "index.js",
   "license": "MIT"
 }

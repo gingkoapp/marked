@@ -14,3 +14,5 @@ Nested todo-list:
     [ ] bar
         [X] baz
             [V] lol
+
+[X] beep

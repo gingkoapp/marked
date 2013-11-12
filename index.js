@@ -16,7 +16,19 @@ marked.setOptions({
   breaks: true, // GFM line breaks https://help.github.com/articles/github-flavored-markdown#newlines
   sanitize: false, // Ignore any HTML that has been input.
   smartLists: true, // Use smarter list behavior than the original markdown.
-  smartypants: true // Use "smart" typograhic punctuation for things like quotes and dashes.
+  smartypants: true, // Use "smart" typograhic punctuation for things like quotes and dashes.
+  idParser: idParser,
 });
 
 module.exports = marked;
+
+// Always gurant unique id
+function idParser(parser, text) {
+  if (!parser._uniqIds) parser._uniqIds = {};
+  if (!parser._uniqCounter) parser._uniqCounter = 1;
+  var id = text.replace(/[\s]+/g, '-');
+  if (parser._uniqIds[id]) id = id + '-' + parser._uniqCounter++;
+  parser._uniqIds[id] = true;
+
+  return id;
+}

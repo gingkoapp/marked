@@ -26,7 +26,7 @@ module.exports = marked;
 function idParser(parser, text) {
   if (!parser._uniqIds) parser._uniqIds = {};
   if (!parser._uniqCounter) parser._uniqCounter = 1;
-  var id = text.toLowerCase().replace(/[\s]+/g, '-');
+  var id = text.toLowerCase().replace(/[\s]+/g, '-').replace(/"/g, '');
   if (parser._uniqIds[id]) id = id + '-' + parser._uniqCounter++;
   parser._uniqIds[id] = true;
 

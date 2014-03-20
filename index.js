@@ -18,6 +18,7 @@ marked.setOptions({
   smartLists: true, // Use smarter list behavior than the original markdown.
   smartypants: true, // Use "smart" typograhic punctuation for things like quotes and dashes.
   idParser: idParser,
+  isGingko: true,
 });
 
 module.exports = marked;

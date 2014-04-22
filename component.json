@@ -1,7 +1,7 @@
 {
   "name": "marked",
   "version": "0.2.10-12",
-  "repo": "chjj/marked",
+  "repo": "gingkoapp/marked",
   "description": "A markdown parser built for speed",
   "keywords": ["markdown", "markup", "html"],
   "scripts": ["index.js", "lib/marked.js"],

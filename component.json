@@ -1,6 +1,6 @@
 {
   "name": "marked",
-  "version": "0.2.10-19",
+  "version": "0.2.10-20",
   "repo": "gingkoapp/marked",
   "description": "A markdown parser built for speed",
   "keywords": ["markdown", "markup", "html"],
